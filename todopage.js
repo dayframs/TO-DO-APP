@@ -1,8 +1,14 @@
+
+
+
 function displayToDo() {
-    let b = resultB.innerHTML;
-    let c = localStorage.val;
-    let d = JSON.parse(localStorage.val);
-    resultB.innerHTML = d;
-}
+    let c = localStorage.getItem('val');
+    let d = JSON.parse(c);
+
+        for (let i = 0; i < localStorage.length; i++) {
+            resultB.innerHTML = d;
+            console.log(resultB.innerHTML);
+        }
+    }
 
 displayToDo();
