@@ -1,0 +1,23 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#resultB {
+  min-height: 200px;
+  border: 3PX solid purple;
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  align-items: center;
+  justify-content: left;  
+  margin: 20px auto;
+  width: 50%;
+  padding: 10px;
+}
+ a {
+    text-decoration: none;
+    color: aqua;
+ }
