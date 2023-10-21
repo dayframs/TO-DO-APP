@@ -4,7 +4,14 @@ padding: 0;
 box-sizing: border-box;
 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+ #resultA, #bookA {
+  min-height: 50px;
+  border: 1px solid green;
+  width: 100px;
+  margin: 10px;
 
+ }
+#bookB,
 #resultB {
   min-height: 100px;
   border: 3PX solid purple;
@@ -20,4 +27,9 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
  a {
     text-decoration: none;
     color: aqua;
+ }
+
+ #book {
+  margin: 20px;
+  text-align: center;
  }

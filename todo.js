@@ -17,11 +17,8 @@ function createToDo() {
     
     console.log(array);
         resultA.innerHTML = 'To do list has been successfully updated';
-        // let b = localStorage.val;
-        // let d = JSON.parse(b);
         array.push(c);
         localStorage.val = JSON.stringify(array);
-        // localStorage.val = 5;
         todo.value = '';
     } else {
         resultA.innerHTML = 'please fill in the box'
@@ -29,9 +26,28 @@ function createToDo() {
 }
 let q = { names: [] };
 q.names.push('Taye', 'Kenny', 'Tolu');
-q.names = ['Jide'];
-alert(q.names);
+// q.names = ['Jide'];
+// alert(q.names);
 
 // let r = 5;
 // r = 10;
 // alert(r);
+
+let myArray = [];
+
+function addBook() {
+    let a = nameBook.value;
+    let b = titleBook.value;
+    let c = Math.ceil(Math.random() * 10000);
+    let book = {
+        name: a,
+        title: b,
+        isbn: c
+    };
+    localStorage.book = JSON.stringify(myArray);
+    myArray.push(book);
+    nameBook.value = '';
+    titleBook.value = '';
+    console.log(localStorage.book);
+    }
+    
