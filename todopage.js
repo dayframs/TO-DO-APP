@@ -18,7 +18,7 @@
 // resultC.innerHTML += 'cook';
 
 function displayBook() {
-    let bookC = localStorage.getItem('book');
+    let bookC = localStorage.getItem('books');
     let bookD = JSON.parse(bookC);
     for (let i = 0; i < bookD.length; i++)
     { 
